@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboardgradient"
+    tools:context=".module2j">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="RECHARGE HERE"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Transaction Date : Auto - generated"
+            android:textColor="#fff"
+            android:textSize="20sp"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Transaction Date : Auto - generated"
+            android:textColor="#fff"
+            android:textSize="20sp"
+             />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:foregroundTint="#fff"
+            android:hint="Mobile Number"
+            android:inputType="textPersonName"
+            android:textColorHint="#B6B2B2" />
+
+
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:foregroundTint="#fff"
+            android:hint="Service Provider"
+            android:inputType="textPersonName"
+            android:textColorHint="#B6B2B2" />
+
+
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:foregroundTint="#fff"
+            android:hint="Amount"
+            android:inputType="textPersonName"
+            android:textColorHint="#B6B2B2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  PrePaid    "
+                android:textColor="#fff"
+                android:checked="false"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  PostPaid"
+                android:textColor="#fff"
+                android:checked="false"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button"
+            android:text="RECHARGE"
+            android:onClick="recharge"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/google"
+            android:onClick="insta"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:onClick="facebook"
+            android:padding="4dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:onClick="twitter"
+            android:padding="4dp"
+            app:srcCompat="@drawable/twitter" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
